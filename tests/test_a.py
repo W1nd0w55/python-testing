@@ -21,3 +21,6 @@ def test_zero_division():
 def test_infinity_division():
     assert div(float('inf'), 1) == float('inf')
     assert div(1, float('inf')) == 0.0
+
+def test_faulty():
+    assert div(2, 5) == 4
